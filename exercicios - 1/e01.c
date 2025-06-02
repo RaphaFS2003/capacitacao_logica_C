@@ -11,9 +11,9 @@
 */
 int main() {
     // Declare as variáveis abaixo:
-    
-
-
+    int num_inteiro = 73;
+    float num_pFlutuante = 3.14;
+    char caractere = 'F';
 
     return 0;
 }

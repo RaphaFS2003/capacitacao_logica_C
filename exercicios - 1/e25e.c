@@ -21,14 +21,18 @@ int main() {
     scanf("%d", &alvo);
 
     // Lógica:
-
-
-    
+    for(tamanho-- ; tamanho >= 0 ; tamanho--){
+        if(numeros[tamanho] == alvo){
+            encontrado = 1;
+            break;
+        }
+    }
 
     // Mensagem de resultado:
-
-
-
+    if(encontrado == 1)
+        printf("Numero presente!");
+    else
+        printf("Numero ausente!");
 
     return 0;
 }

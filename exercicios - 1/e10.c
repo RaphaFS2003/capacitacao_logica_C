@@ -13,13 +13,13 @@ int main() {
     printf("Digite um número inteiro: ");
 
     // Leitura do número informado pelo usuário
-    scanf( ??? );
+    scanf( "%d", &numero );
 
     // Cálculo do resultado
-    
+    resultado = numero * numero++;
 
     // Exibição do resultado
-    printf( ??? );
+    printf( "O resultado e %d", resultado );
 
     return 0;
 }

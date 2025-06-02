@@ -16,13 +16,14 @@
 
 int main() {
     // implementação:
+    int var,i;
 
+    printf("Digite um numero inteiro entre 1 e 10: ");
+    scanf("%d", &var);
 
-
-
-
-
-
+    for(i=1; i<=10; i++){
+        printf("\n%d X %d = %d",var,i,var*i);
+    }
 
     return 0;
 }

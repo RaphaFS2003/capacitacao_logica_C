@@ -22,19 +22,22 @@ int main() {
     float totalSemanas;
 
     // Leitura dos valores informados pelo usuário
-    
+    printf("Digite os valores para anos meses e dias (nesta ordem):");
+    scanf("%d", &anos);
+    scanf("%d", &meses);
+    scanf("%d", &dias);
 
     // Cálculo do total de dias
-    
+    totalDias = (anos*365)+(meses*30)+dias;
 
     // Exibição do total de dias
-
+    printf("\nTotal de dias = %d dias", totalDias);
 
     // Cálculo do total de semanas
-
+    totalSemanas = (float)totalDias/7;
 
     // Exibição do total de semanas
-    
+    printf("\nTotal de semanas = %.3f semanas", totalSemanas);
 
     return 0;
 }

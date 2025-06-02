@@ -26,12 +26,15 @@ int main() {
         printf("v[%d] = %d\n", i, v[i]);
     }
 
-    // Calcula soma dos números do vetor
+    // Calcula soma e subtracao dos números do vetor
     soma = 0;
     for (i = 0; i < 5; i++) {
+        if(i%2 == 1)
+            v[i] *= (-1); 
+        
         soma += v[i];  // Soma cada número do vetor, conforme seu índice i
     }
-    printf("A soma dos números é: %d\n", soma);
+    printf("O resultado e: %d\n", soma);
 
     return 0;
 }
